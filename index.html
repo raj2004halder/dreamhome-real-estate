@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DreamHome - Real Estate</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-house"></i>
+            <span>Dream<span>Home</span></span>
+        </div>
+
+        <nav id="navMenu">
+
+            <a href="#home">Home</a>
+            <a href="#properties">Properties</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+            <span id="authNav">
+                <a href="login.html" class="login-link">
+                    Login
+                </a>
+            </span>
+
+        </nav>
+
+        <button class="menu-btn" id="menuBtn" type="button" title="Toggle navigation menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <p class="hero-small">
+                FIND YOUR DREAM PROPERTY
+            </p>
+
+            <h1>
+                Find Your <span>Dream Home</span>
+            </h1>
+
+            <p class="hero-text">
+                Discover premium 2BHK, 3BHK and luxury apartments
+                designed for modern living.
+            </p>
+
+            <a href="#properties" class="hero-btn">
+                Explore Properties
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <div class="search-item">
+
+                <label>Location</label>
+
+                <select id="location" title="Select a location">
+
+                    <option value="all">All Locations</option>
+                    <option value="Kolkata">Kolkata</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Bangalore">Bangalore</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>Property Type</label>
+
+                <select id="propertyType" title="Select a property type">
+
+                    <option value="all">All Types</option>
+                    <option value="Apartment">Apartment</option>
+                    <option value="House">Independent House</option>
+                    <option value="Building">Building</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label>BHK</label>
+
+                <select id="bhk" title="Select number of bedrooms">
+
+                    <option value="all">All BHK</option>
+                    <option value="2">2 BHK</option>
+                    <option value="3">3 BHK</option>
+                    <option value="4">4 BHK</option>
+
+                </select>
+
+            </div>
+
+
+            <div class="search-item">
+
+                <label for="budget">Budget</label>
+
+                <select id="budget">
+
+                    <option value="all">Any Budget</option>
+                    <option value="50">Under ₹50L</option>
+                    <option value="75">Under ₹75L</option>
+                    <option value="100">Under ₹1Cr</option>
+
+                </select>
+
+            </div>
+
+
+            <button class="search-btn" id="searchBtn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                Search
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PROPERTIES ================= -->
+
+    <section class="properties-section" id="properties">
+
+        <div class="section-heading">
+
+            <p>OUR PROPERTIES</p>
+
+            <h2>
+                Featured <span>Properties</span>
+            </h2>
+
+            <p class="heading-text">
+                Explore our collection of beautiful homes and
+                premium apartments.
+            </p>
+
+        </div>
+
+
+        <div class="property-grid" id="propertyContainer">
+
+            <!-- JavaScript will insert properties here -->
+
+        </div>
+
+        <p id="noResult" class="no-result">
+            No properties found.
+        </p>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section class="about-section" id="about">
+
+        <div class="about-image">
+
+            <img src="images/property3.jpg" alt="Modern Building">
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">
+                ABOUT US
+            </p>
+
+            <h2>
+                We Help You Find Your
+                <span>Perfect Home</span>
+            </h2>
+
+            <p>
+                DreamHome is a modern real-estate platform helping
+                families find quality apartments, houses and
+                commercial properties.
+            </p>
+
+            <p>
+                Our goal is to make property buying simple,
+                transparent and convenient.
+            </p>
+
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-building"></i>
+
+                    <div>
+                        <h3>100+</h3>
+                        <p>Properties</p>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-users"></i>
+
+                    <div>
+                        <h3>500+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+
+                </div>
+
+
+                <div>
+                    <i class="fa-solid fa-award"></i>
+
+                    <div>
+                        <h3>10+</h3>
+                        <p>Years Experience</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="section-heading">
+
+            <p>CONTACT US</p>
+
+            <h2>
+                Let's Find Your <span>Home</span>
+            </h2>
+
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <div class="contact-info">
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+
+                        <h3>Phone</h3>
+
+                        <p>+91 98765 43210</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <div>
+
+                        <h3>WhatsApp</h3>
+
+                        <p>+91 98765 43210</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <div>
+
+                        <h3>Email</h3>
+
+                        <p>info@dreamhome.com</p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-card">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+
+                        <h3>Office</h3>
+
+                        <p>Kolkata, West Bengal</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form" id="contactForm">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="tel" placeholder="Phone Number" required>
+
+                <textarea placeholder="Tell us what property you are looking for..." required></textarea>
+
+                <button type="submit">
+                    Send Enquiry
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <div class="logo">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    <span>
+                        Dream<span>Home</span>
+                    </span>
+
+                </div>
+
+                <p>
+                    Find your dream home with us.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#properties">Properties</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Property Types</h3>
+
+                <a href="#">2 BHK</a>
+                <a href="#">3 BHK</a>
+                <a href="#">4 BHK</a>
+                <a href="#">Commercial</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <a href="#" title="Visit our Facebook page">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="#" title="Visit our Instagram page">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" title="Visit our YouTube channel">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 DreamHome. All Rights Reserved.
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= PROPERTY MODAL ================= -->
+
+    <div class="modal" id="propertyModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">
+                &times;
+            </button>
+
+            <img id="modalImage" src="" alt="Property">
+
+            <div class="modal-body">
+
+                <p id="modalType"></p>
+
+                <h2 id="modalTitle"></h2>
+
+                <h3 id="modalPrice"></h3>
+
+                <p id="modalLocation"></p>
+
+                <div class="modal-details">
+
+                    <span id="modalArea"></span>
+
+                    <span id="modalBedrooms"></span>
+
+                    <span id="modalBathrooms"></span>
+
+                </div>
+
+                <p id="modalDescription"></p>
+
+
+                <div class="modal-buttons">
+
+                    <a href="tel:+919876543210">
+                        <i class="fa-solid fa-phone"></i>
+                        Call Now
+                    </a>
+
+                    <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   <script src="js/data.js"></script>
+   <script src="js/script.js"></script>
+   <script src="js/home.js"></script>
+</body>
+
+</html>

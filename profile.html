@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>My Profile - DreamHome</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            DreamHome
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="properties.html">
+                Properties
+            </a>
+
+            <a href="profile.html">
+                Profile
+            </a>
+
+            <button id="logoutBtn">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="profile-container">
+
+        <section class="profile-card">
+
+            <div class="profile-image">
+
+                <img
+                    id="profileImage"
+                    src="images/default-profile.png"
+                    alt="Profile"
+                >
+
+            </div>
+
+
+            <h1 id="profileName">
+                Loading...
+            </h1>
+
+            <p id="profileEmail">
+                Loading...
+            </p>
+
+
+            <div class="profile-info">
+
+                <div>
+                    <strong>Phone</strong>
+                    <span id="profilePhone">
+                        -
+                    </span>
+                </div>
+
+                <div>
+                    <strong>City</strong>
+                    <span id="profileCity">
+                        -
+                    </span>
+                </div>
+
+            </div>
+
+
+            <div class="profile-actions">
+
+                <a href="edit-profile.html">
+                    Edit Profile
+                </a>
+
+                <a href="properties.html">
+                    Browse Properties
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section class="profile-section">
+
+            <h2>
+                ❤️ Saved Properties
+            </h2>
+
+            <div id="savedProperties">
+
+                <p>
+                    No saved properties yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section class="profile-section">
+
+            <h2>
+                📩 My Enquiries
+            </h2>
+
+            <div id="enquiries">
+
+                <p>
+                    You don't have any enquiries yet.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/profile.js"></script>
+
+</body>
+
+</html>
